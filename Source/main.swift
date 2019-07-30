@@ -23,6 +23,13 @@ setbuf(stdout, nil);
 
 let server = HttpServer()
 
+// Root path, show help text
+server["/"] = { request in
+  print("\nHandling request: \(request.params as AnyObject)")
+  return HttpResponse.ok(.text("Specify a latitude and longitude to convert."))
+}
+
+// Convert latitude and longitude
 server["/:latlng"] = { request in
 
   print("\nHandling request: \(request.params as AnyObject)")

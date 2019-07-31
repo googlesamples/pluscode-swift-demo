@@ -62,7 +62,7 @@ server["/:latlng"] = { request in
                                         longitude: lng,
                                         codeLength: 10) {
     print("Open Location Code: \(code)")
-    dict["status"] = "ok"
+    dict["status"] = "OK!!"
     dict["pluscode"] = code
   } else {
     dict["status"] = "error"

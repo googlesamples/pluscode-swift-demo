@@ -17,8 +17,8 @@ RUN mkdir /app
 WORKDIR /app
 
 # Add the Package first so the network operations can be cached.
-ADD Package.swift /app/
-RUN swift package update
+ADD Package.* /app/
+RUN swift package resolve
 
 # Build the app
 ADD . /app

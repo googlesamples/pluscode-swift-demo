@@ -20,7 +20,7 @@ let package = Package(
     name: "PlusCodeConverter",
     dependencies: [
         .package(url: "https://github.com/google/open-location-code-swift.git", .branch("master")),
-        .package(url: "https://github.com/httpswift/swifter.git", .upToNextMajor(from: "1.4.6")),
+        .package(url: "https://github.com/httpswift/swifter.git", .upToNextMajor(from: "1.4.7")),
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "4.0.0"),
     ],
     targets: [
